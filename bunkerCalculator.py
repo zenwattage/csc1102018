@@ -3,6 +3,9 @@
 #Section 5
 #4/13/18
 #Bunker Calculator
+print("#####"*8)
+print("")
+print('****'*10)
 print("****Welcome to the bunker calculator!****")
 print('****'*10)
 print()
