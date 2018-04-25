@@ -1,4 +1,21 @@
-#Scott Hansford
+# TreeTest3.py
+# This sample program demonstrates drawing shapes
+# on a canvas using some Gui tools.
+#
+# Study the program GuiTest3.py before working with this program.
+# Separate documents posted on the class web site describe how this
+# sample program works and how do design your own scene elements.
+#
+# This program is not interactive.  It draws the same
+# picture every time it is executed.
+#
+# To run this program, you must save the file Gui3.py
+# in the same folder as this program.
+#
+# CSC 110
+# W'18 (Python 3 version)
+
+# Required import statement for Gui tools
 import Gui3
 
 # Named Constants 
@@ -11,14 +28,6 @@ CANVAS_HEIGHT = 480
 # the location of a point at the center of the bottom edge
 # of the tree trunk.  The last parameter is the height of
 # the tree.  All parameters have units of pixels.
-def draw_mountains(base_x, base_y, height):
-    LL_x = base_x - height * 0.2
-    LR_x = base_x + height * 0.2
-    L_y = base_y + height * 0.5
-    canvas.polygon([[base_x, base_y + height], [LL_x, L_y], [LR_x, L_y]], fill = 'green')
-
-
-
 def draw_simple_tree(base_x, base_y, height):
     # draw trunk
     trunk_x1 = base_x - height * 0.05
@@ -44,6 +53,7 @@ def draw_tree_cluster(x, y, size):
     draw_simple_tree(x - size * 0.15, y + size * 0.5, size * 0.5)
     draw_simple_tree(x - size * 0.3, y + size * 0.3, size * 0.6)
     draw_simple_tree(x, y, size * 0.8)
+    
 
 def main():
     # draw things on the canvas
@@ -52,17 +62,6 @@ def main():
     draw_tree_cluster(60, -120 , 120)
     draw_simple_tree(-80, -150, 140)
     draw_simple_tree(-100, -180, 160)
-    draw_mountains(40,20,30)
-
-
-
-
-
-
-
-
-
-    
 
 #####################################################################
 #
