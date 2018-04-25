@@ -30,11 +30,17 @@ CANVAS_HEIGHT = 480
 # Function Definition Section -- add your function definitions here
 def main():
     # draw things on the canvas
-    canvas.circle([100,-100], 50, fill='cornflowerblue', outline='orange')
+    canvas.circle([60,100], 30, fill='cornflowerblue', outline='orange')
+    canvas.circle([0,0], 200, outline='orange', width = 5)
+
 ##    canvas.rectangle([[0,0],[50, 50]], fill='green', outline='red')
-##    canvas.polygon([[-50, -50], [50, -50], [-50, 50]], outline='cyan', width=3)
-    canvas.line([[20, 62], [75, 42]], width=4)
-    canvas.line([[100,-105],[110,-150]], width = 6)
+    
+    canvas.polygon([[-130, -50], [50, -50], [-60, 50]], fill = 'black', outline='cyan', width=1)
+    canvas.polygon([[10, -50], [100, -50], [80, 60]], fill = 'cornflowerblue', outline='blue', width=1)
+    canvas.polygon([[-70, -50], [-10, -50], [-30, 30]], fill = 'lightgreen', outline='blue', width=1)
+    
+    canvas.line([[100, -60], [-130, -60]], width=20, fill = 'brown')
+##    canvas.line([[100,-105],[110,-150]], width = 6)
 ##    canvas.line([[-65, 40], [-55, 20], [-65, 0], [-55, -20], [-65, -40]], \
 ##                fill='magenta', width=2)
 ##    canvas.oval([[-50, -55], [50, -75]], fill='gray', width=0)

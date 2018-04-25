@@ -51,16 +51,16 @@ def draw_simple_tree(base_x, base_y, height):
 # in pixels from the bottom to the top of the cluster.
 def draw_tree_cluster(x, y, size):
     draw_simple_tree(x - size * 0.15, y + size * 0.5, size * 0.5)
-    draw_simple_tree(x - size * 0.3, y + size * 0.3, size * 0.6)
-    draw_simple_tree(x, y, size * 0.8)
+##    draw_simple_tree(x - size * 0.3, y + size * 0.3, size * 0.6)
+##    draw_simple_tree(x, y, size * 0.8)
 
 def main():
     # draw things on the canvas
     draw_tree_cluster(0, 0, 50)
     draw_tree_cluster(-40, -30, 65)
     draw_tree_cluster(60, -120 , 120)
-    draw_simple_tree(-80, -150, 140)
-    draw_simple_tree(-100, -180, 160)
+##    draw_simple_tree(-80, -150, 140)
+##    draw_simple_tree(-100, -180, 160)
 
 #####################################################################
 #
