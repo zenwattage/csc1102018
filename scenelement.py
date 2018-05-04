@@ -1,26 +1,10 @@
+#Scott Hansford
+#CSC110
+#Section 05
+#4/23/18
+#Graphics scene
 
-# GuiTest3.py
-# This sample program demonstrates drawing shapes
-# on a canvas using some Gui tools.
-#
-# This program is not interactive.  It draws the same
-# picture every time it is executed.
-#
-# To run this program, you must save the file Gui3.py
-# in the same folder as this program.
-#
-# You can use this sample as starter code for drawing-related
-# lab exercises and homework assignments.  Just save a copy of
-# the file with a new name, add your own function definitions,
-# and change the code in the 'main' function.
-#
-# Pay careful attention to the use of [] to specify points
-# and lists of points.  We'll talk more about this later...
-#
-# CSC 110
-# Sp'12 (Python 3 version)
 
-# Required import statement for Gui tools
 import Gui3
 
 # Named Constants 
