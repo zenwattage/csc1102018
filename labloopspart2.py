@@ -31,9 +31,4 @@
 ##    count = count + 5
 ##print('Done')
 
-#use a for loop to create the same pattern.
-
-for count in range(-10,20):
-    count = count + 5
-    print(count)
-print('Done')
+#use a for loop to create the same pattern
