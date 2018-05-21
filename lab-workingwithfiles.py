@@ -9,6 +9,12 @@
 def main():
     #get filename from user
     filename  = str(input('What file would you like to open? '))
+    open_filename = open(filename,'r')
+    read_file = open_filename.readline()
+
+    #while loop
+    while read_file != '':
+        
     #open and read from file
     if filename != '':
         open_file = open(filename,'r')
@@ -22,11 +28,12 @@ def main():
     even_file = open('even.txt','w')
     odd_file = open('odd.txt','w')
     
-    for line in line1:
+    for i in line1:
         if line1 % 2 == 0:
-            odd_file.write(str(line1))
-        elif line1 % 3 == 0:
-            even_file.write(str(line1))
+            line1 = even
+
+    even =even_file.write()
+    odd = odd_file.write()
 
     
     
