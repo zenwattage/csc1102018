@@ -6,37 +6,36 @@
 #lab activity - working with files
 #this program will ask the user for a file name, read in the numbers from the file,
 # and output odds to one evens to another
-def main():
-    #get filename from user
-    filename  = str(input('What file would you like to open? '))
-    open_filename = open(filename,'r')
-    read_file = open_filename.readline()
-    read_string = str(read_file)
-    print(read_string)
 
+#get filename from user
+filename  = input('What file would you like to open? ')
+open_filename = open(filename,'r')
+even_file = open('even.txt','w')
+odd_file = open('odd.txt','w')
 
-    while read_string != '':
+even_sum = 0
+count_neg = 0
+read_string = open_filename.readline()
+
+while read_string != '':
     
-        even_sum = 0
-        count_neg = 0
-        even_file = open('even.txt','w')
-        odd_file = open('odd.txt','w')
-        #even_file.write(str(read_file))
+    num = int(read_string)
 
+    if num % 2 == 0:
+        even_sum += num
+        even_file.write(str(num) + '\n')
 
-        if read_string % 2 == 0:
-            even_sum += 1
-            even_file.write()
+    if num < 0 :
+        count_neg += 1
 
-        elif read_string <= 0 :
-            count_neg += 1
+    else:
+        odd_file.write(str(num) + '\n')
+    read_string = open_filename.readline()
+    
+print('The sum of even numbers is: ', even_sum )
+print('The negative count is: ', count_neg)
 
-        else:
-            odd_file.write(read_string)
-        
-    print(read_file)
-    open_filename.close()
-    even_file.close()
-    odd_file.close()
-
-main()
+#close files
+open_filename.close()
+even_file.close()
+odd_file.close()
