@@ -11,64 +11,32 @@ def main():
     filename  = str(input('What file would you like to open? '))
     open_filename = open(filename,'r')
     read_file = open_filename.readline()
+    read_string = str(read_file)
+    print(read_string)
 
-    #while loop
-    while read_file != '':
+
+    while read_string != '':
+    
+        even_sum = 0
+        count_neg = 0
+        even_file = open('even.txt','w')
+        odd_file = open('odd.txt','w')
+        #even_file.write(str(read_file))
+
+
+        if read_string % 2 == 0:
+            even_sum += 1
+            even_file.write()
+
+        elif read_string <= 0 :
+            count_neg += 1
+
+        else:
+            odd_file.write(read_string)
         
-    #open and read from file
-    if filename != '':
-        open_file = open(filename,'r')
-    elif filename == '':
-        print('This file is empty. Please open a valid file.')
-        filename = str(input('What file would you like to open? '))
-    #read file one line at a timee
-    
-    line1 = str(open_file.readline())
-    print(line1)
-    even_file = open('even.txt','w')
-    odd_file = open('odd.txt','w')
-    
-    for i in line1:
-        if line1 % 2 == 0:
-            line1 = even
+    print(read_file)
+    open_filename.close()
+    even_file.close()
+    odd_file.close()
 
-    even =even_file.write()
-    odd = odd_file.write()
-
-    
-    
-
-# def evenodd(line):
-#     linetest = line
-#     even_file = open('even.txt','w')
-#     odd_file = open('odd.txt','w')
-#     if str(linetest) % 2 != 0:
-#         odd_file.write(str(linetest))
-#     elif str(linetest) % 3 != 0:
-#         even_file.write(str(linetest))
-#     even_file.close()
-#     odd_file.close()
-    
-
-
-
-    
-    
-
-
-
-
-
-    
-
-
-#display the sum of the even numbers and the count of the negative numbers
-
-#input section
-
-#read file
-    #close the file
-    print('Data written to: ',odd_file, 'and', even_file)
-
-#call main function
 main()
