@@ -34,16 +34,25 @@ user = input('Enter the name of your data file: ')
 #open and read the file
 infile = open(user,'r')
 line = infile.readline()
+new_file = 'REPORT-' + user
+
 while line != '':
+    num = int(line)
     #open 'REPORT-' file
-    new_file = 'REPORT-' + user
+    print(num)
     open_new = open(new_file,'w')
+    if num < 5:
+        open_new.write(str(num)+'\n')
+        num +=1
+        print(num)
+
+
+    
     
 
     #write data lines to file in format:
     #In 1952, 90.81% registered and 72.80% voted.
-    #open_new.write('In ',date, format(registered,'.2f'), '\% registered and ',\
-    # format(voted,'.2f'),'voted.')
+    
 
     # % of registered voters
     # LINE 3 / LINE 2 * 100
