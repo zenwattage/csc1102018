@@ -26,28 +26,23 @@
 # Percentage of years with more than 80% of registered voters casting ballots: 47.1%
 # An output file named REPORT-PresidentialElections.txt has been created.
 
-
-
 #get file to open from user
 user = input('Enter the name of your data file: ')
 
 #open and read the file
 infile = open(user,'r')
 line = infile.readline()
+
+#new output file name begins with 'REPORT-'
 new_file = 'REPORT-' + user
+years_total = 0
+ballots_total = 0
 
-while line != '':
-    num = int(line)
+for i in infile:
+    print(line)
+    line = infile.readline()
+
     #open 'REPORT-' file
-    print(num)
-    open_new = open(new_file,'w')
-    if num < 5:
-        open_new.write(str(num)+'\n')
-        num +=1
-        print(num)
-
-
-    
     
 
     #write data lines to file in format:
