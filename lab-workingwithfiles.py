@@ -8,6 +8,7 @@
 # and output odds to one evens to another
 
 #get filename from user
+
 filename  = input('What file would you like to open? ')
 open_filename = open(filename,'r')
 even_file = open('even.txt','w')
