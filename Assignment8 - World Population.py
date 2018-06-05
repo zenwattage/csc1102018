@@ -17,6 +17,7 @@ def main():
         line = file.readline().rstrip()
 
         countries_num = sum(1 for line in open('WorldData2018.txt')) #sum of countries
+        # loop through file to create each list
         for i in range(0,countries_num):
             line = line.split(',')
             country = line[0]
@@ -41,7 +42,7 @@ def main():
         minPopulation = 999999999
         maxArea = 0
         minArea = 999999999
-        #indexes
+        #index
         indexmaxpop = 0
         indexMinPopulation = 0
         indexMaxArea = 0
@@ -67,7 +68,7 @@ def main():
                 maxDensity = density
                 indexMaxDensity = i
         # the name and land area of the country that has the greatest land area
-        # area calc
+        # area calculation loop
         for i in range(0, countries_num):
             density = float(averagedensity[i])
             if populations[i] < minPopulation:
@@ -81,7 +82,7 @@ def main():
                 indexMinDensity = i
 
 # the name and population density of the country that has the highest population density
-
+        #highest population loop
         for i in range(0, countries_num):
             density = float(averagedensity[i])
             highDensity = totalDensity * 2

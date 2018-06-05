@@ -1,0 +1,16 @@
+body{
+    background: red;
+    width: auto;
+
+}
+
+ol{
+    border: 10px solid yellowgreen;
+    border-width: auto;
+    background: darkolivegreen;
+    font-size: 20px;
+}
+
+div{
+    font-size: 40em;
+}
