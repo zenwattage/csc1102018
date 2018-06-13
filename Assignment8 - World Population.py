@@ -81,7 +81,7 @@ def main():
                 minDensity = density
                 indexMinDensity = i
 
-# the name and population density of the country that has the highest population density
+        # the name and population density of the country that has the highest population density
         #highest population loop
         for i in range(0, countries_num):
             density = float(averagedensity[i])

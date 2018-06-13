@@ -64,6 +64,19 @@
 # for i in range(len(price)):
 #     print(price[i])
 
-splitTest = 'Hello everyone shit the bed!'
-new = splitTest.split(' ')
-print(new)
+# splitTest = 'Hello everyone shit the bed!'
+# new = splitTest.split(' ')
+# print(new)
+import operator
+distance = [4.5,7.1,8.9,3.2]
+
+first = float(distance[0])
+second = float(distance[1])
+third = float(distance[2])
+fourth = float(distance[3])
+
+front_two = sum(first,second)
+middle_two = sum(second,third)
+back_two = sum(third,fourth)
+map(operator.add,first,second)
+print('The front two are:',front_two,'\nThe middle two are: ',middle_two, '\nThe back two are: ',back_two)
