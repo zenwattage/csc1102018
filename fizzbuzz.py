@@ -12,10 +12,13 @@ def fizzbuzz(n):
     return result
 
 def main():
-    print(', '.join(fizzbuzz(20)))
+    print(', '.join(fizzbuzz(100)))
 
 main()
 
+
+
+
 # tricky solution
-for n in range(20):
-    print('FizzBuzz'[n%-3&4:12&8-(n%-5&4)] or n)
+# for n in range(20):
+#     print('FizzBuzz'[n%-3&4:12&8-(n%-5&4)] or n)

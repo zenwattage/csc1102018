@@ -25,7 +25,7 @@ def sort(numbers):
 
         idxSmallest = idx; # initialization
         for i in range(idx + 1, len(numbers)):
-            if numbers[i] < numbers[idxSmallest]:  # found a new smallest value,
+            if numbers[i] > numbers[idxSmallest]:  # found a new smallest value,
                 idxSmallest = i;  # so remember its subscript
 
     # now that we've found the index of the smallest value, swap it into place
